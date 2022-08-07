@@ -26,11 +26,14 @@ mix.styles([
 mix.scripts([
     'resources/assets/js/google-map.js',
     'resources/assets/js/headroom.min.js',
-    'resources/assets/js/html5shiv.js',
     'resources/assets/js/jQuery.headroom.min.js',
-    'resources/assets/js/respond.min.js',
     'resources/assets/js/template.js',
 ], 'public/assets/js/scripts.js');
+
+mix.scripts([
+    'resources/assets/js/html5shiv.js',
+    'resources/assets/js/respond.min.js',
+], 'public/assets/js/ie9.js');
 
 mix.copyDirectory('resources/assets/images', 'public/assets/images');
 mix.copyDirectory('resources/assets/fonts', 'public/assets/fonts');

@@ -16,7 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::group([
     'namespace' => 'Front',
     ], function() {
-       Route::get('/', 'IndexController')->name('index');
+        Route::get('/', 'IndexController')->name('index');
+        Route::get('/about', 'AboutController')->name('about');
+        Route::get('/services', 'ServicesController')->name('services');
+        Route::get('/service/{slug}', 'ServiceController')->name('service');
     }
 );
 

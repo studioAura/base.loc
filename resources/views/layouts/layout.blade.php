@@ -7,7 +7,9 @@
 
 @include('includes.navbar')
 
+@if( isset($page->id) and $page->id == 1)
 @include('includes.header')
+@endif
 
 @yield('content')
 

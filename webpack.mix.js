@@ -15,3 +15,22 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
+
+mix.styles([
+    'resources/assets/css/bootstrap.min.css',
+    'resources/assets/css/bootstrap-theme.css',
+    'resources/assets/css/font-awesome.min.css',
+    'resources/assets/css/main.css',
+], 'public/assets/css/styles.css');
+
+mix.scripts([
+    'resources/assets/js/google-map.js',
+    'resources/assets/js/headroom.min.js',
+    'resources/assets/js/html5shiv.js',
+    'resources/assets/js/jQuery.headroom.min.js',
+    'resources/assets/js/respond.min.js',
+    'resources/assets/js/template.js',
+], 'public/assets/js/scripts.js');
+
+mix.copyDirectory('resources/assets/images', 'public/assets/images');
+mix.copyDirectory('resources/assets/fonts', 'public/assets/fonts');

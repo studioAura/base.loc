@@ -1,3 +1,9 @@
+@extends('layouts.layout')
+
+@section('title', 'Разработка веб-сайтов и информационных систем')
+
+@section('content')
+
 <!-- Intro -->
 <div class="container text-center">
     <br> <br>
@@ -46,6 +52,14 @@
 </div>
 <!-- /Highlights -->
 
+<div class="container">
+    <div class="row">
+        <div class="pt-60">
+            {!! $page->content !!}
+        </div>
+    </div>
+</div>
+
 <!-- container -->
 <div class="container">
 
@@ -80,9 +94,6 @@
         </div>
     </div> <!-- /row -->
 
-    <div class="jumbotron top-space">
-        <h4>Dicta, nostrum nemo soluta sapiente sit dolor quae voluptas quidem doloribus recusandae facere magni ullam suscipit sunt atque rerum eaque iusto facilis esse nam veniam incidunt officia perspiciatis at voluptatibus. Libero, aliquid illum possimus numquam fuga.</h4>
-        <p class="text-right"><a class="btn btn-primary btn-large">Learn more »</a></p>
-    </div>
-
 </div>	<!-- /container -->
+
+@endsection

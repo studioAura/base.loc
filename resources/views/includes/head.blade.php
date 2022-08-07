@@ -4,13 +4,13 @@
     <meta name="description" content="">
     <meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-    <title>Progressus - Free business bootstrap template by GetTemplate</title>
+    <title>@yield('title')</title>
 
     <link rel="shortcut icon" href="{{ asset('assets/images/gt_favicon.png') }}" type="image/png">
     <link rel="icon" href="{{ asset('assets/images/gt_favicon.png') }}" type="image/png">
 
     <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
